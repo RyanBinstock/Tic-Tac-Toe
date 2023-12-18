@@ -1,0 +1,129 @@
+body {
+  font-family: Arial;
+  background-color: rgb(179, 177, 196);
+  margin: 0;
+}
+
+button {
+  border-style: solid;
+}
+
+.header {
+  margin-top: -30px;
+  background-color: royalblue;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  color:white;
+}
+
+.board-container {
+  width: 240px;
+  margin: auto;
+}
+
+.js-board {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  justify-content: center;
+  justify-items: center;
+  transition: box-shadow 0.15s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+} 
+
+.piece-button {
+  height: 80px;
+  width: 80px;
+  background-color: darkgray;
+}
+
+.piece-button-empty:hover {
+  background-color:lightgray;
+}
+
+.piece-button-empty:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.piece-icon {
+  width: 100%;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 250px 150px;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10px;
+}
+
+.reset-board-button, .play-comp-button {
+  border-color: rgb(52, 92, 206);
+  color: rgb(52, 92, 206);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.reset-board-button:hover, .play-comp-button:hover {
+  color: white;
+  background-color:rgb(52, 92, 206);
+}
+
+.reset-board-button {
+  margin-bottom: 10px;
+}
+
+.player-turn-text {
+  font-size: 25px;
+  flex:0.1;
+}
+
+.button-left {
+  border-left: none;
+}
+
+.button-right {
+  border-right: none;
+}
+
+.button-top {
+  border-top: none;
+}
+
+.button-bottom { 
+  border-bottom: none;
+}
+
+.winning-piece {
+  border-color: red;
+}
+
+.game {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  margin: auto;
+  justify-items: center;
+
+  background-color:rgba(255, 255, 255, 0.473);
+
+  padding-top: 20px;
+  padding-bottom: 10px;;
+}
+
+.buttons { 
+  display: flex;
+  flex-direction: column;
+}
+
